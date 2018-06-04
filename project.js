@@ -5,7 +5,7 @@ app.use(express.static('public'));
 app.set('view engine','ejs');
 var bodyParser = require('body-parser');
 var mongojs = require('mongojs');
-var db = mongojs('mongodb://samyu:samyu369@ds245680.mlab.com:45680/svecw',['admin','user','hostel'])
+var db = mongojs('mongodb://sudeshna:cornetto123@ds247410.mlab.com:47410/hostelfee',['admin','user','hostel'])
 var session = require('express-session')
 app.use(session({secret:'123456789'}))
 app.get('/home',function(req,res){
@@ -132,6 +132,6 @@ app.get('/con/:_id/:beds',function(req,res){
     }
 	})
 })
-app.listen(9999,function(){
+app.listen(4000,function(){
 	console.log("go to web page!!!!");
 })
