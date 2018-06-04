@@ -1,0 +1,25 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+</head>
+<body style = "background-color:lightgrey">
+	<div class = "row">
+		<div class = "col-md-12">
+			<br><br><a href = "/logout" style = "padding-left:1200px"><button type="submit" class="btn btn-success btn-lg">Logout</button></a><br><br>
+		</div>
+	<div class = "row">
+	<h1 align = "center"><b>LOGIN HERE</b></h1>
+ 	 <div class = "container">
+	<form class="login-inner" action = "/loginsubmit" method = "POST" style= "background-color:white ;margin:50px 300px 50px 300px ; padding: 20px 20px 20px 20px">
+			<input type = "text" name = "regdno" class = "form-control" placeholder = "Enter regdno"><br><br>
+			<input type = "password" name = "password" class = "form-control" placeholder = "Enter password"><br><br>
+			<div align = "center"><input type = "checkbox" required>Agree terms and conditions<br><br>
+			<button type="submit" class="btn btn-success btn-lg">Login</button><br><br>
+	</form>
+	<a class="btn btn-primary btn-lg" href="/signup" role="button">Register</a>
+  </div>
+  </div>
+
+</body>
+
+</html>

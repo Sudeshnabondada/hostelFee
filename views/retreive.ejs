@@ -1,0 +1,23 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../../../../bootstrap.css">
+</head>
+<body style = "background-color:lightgrey">
+	<h1>Room details</h1><br><br>
+	<div class = "row">
+	<div class = "col-sm-6 col-md-4">
+			<div class = "thumbnail">
+				<img src = "..." alt = "...">
+				<div class = "caption">
+					<h3>Name:<%=result[0].name%></h3>
+					<h3>Room no:<%=result[0].rno%></h3>
+					<h3>No of beds:<%=result[0].beds%></h3>
+					<h3>Type of hostel:<%=result[0].hosteltype%></h3>
+					<h3>Fees:<%=result[0].fees%></h3>
+					<a href="/con/<%=result[0]._id%>/<%=result[0].beds%>"><button type="submit" class="btn btn-primary btn-lg">Confirm to pay</button></a>
+				</div>
+			</div>
+	</div>
+	</div>
+</body>
+</html>

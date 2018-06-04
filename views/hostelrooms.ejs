@@ -1,0 +1,28 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+</head>
+<body style="background-color:lightgrey">
+			<h1 style="color:white">Hostel Details</h1><br>
+		
+	<div class = "row">
+	<% for(i = 0;i<result.length;i++){ %>
+		<div class = "col-sm-6 col-md-4">
+			<div class = "thumbnail">
+				<img src = "..." alt = "...">
+				<div class = "caption">
+					<h3>Name:<%=result[i].name%></h3>
+					<h3>Room no:<%=result[i].rno%></h3>
+					<h3>No of beds:<%=result[i].beds%></h3>
+					<h3>Type of hostel:<%=result[i].hosteltype%></h3>
+					<h3>Fees:<%=result[i].fees%></h3>
+					<% if(result[i].beds!=0){%>
+					<a href="/retreive/<%=result[i].rno%>/<%=result[i].name%>/<%=result[i]._id%>/<%=result[i].beds%>"><button type="submit" class="btn btn-primary btn-lg">Book now</button></a>
+			<%} %>
+				</div>
+			</div>
+		</div>
+	<%}%>
+</div>
+</body>
+</html>

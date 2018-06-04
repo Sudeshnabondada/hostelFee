@@ -1,0 +1,40 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css"	
+</head>
+<body style = "background-color: lightgrey">
+	<h1 align = "center"><b>HOSTEL MANAGEMENT</b></h1>
+	<div class = "container" >
+	<form action = '/roomsinsertsubmit' method = "POST" style= "background-color:white ;margin:50px 300px 50px 300px ; padding: 20px 20px 20px 20px">
+	<label>Hostel name</label>
+	<select name = "name"> 
+		<option value = "srujana">srujana</option>
+		<option value = "rajeswari">rajeswari</option>
+		<option value = "bhuvana">bhuvana</option>
+		<option value = "bhargavi">bhargavi</option>
+		<option value = "spoorthi">spoorthi</option>
+	</select>
+	<br><br>
+
+	<label>Room number</label><br>
+	<input type = "text" class = "form-control" name = "rno" placeholder = "Enter the room number"><br><br>
+
+	<label>Total no of beds</label><br>
+	<input type = "number" class = "form-control" name = "beds" placeholder = "Enter the no of beds"><br><br>
+
+	
+	<label>Hostel type(ac/non-ac)</label>
+	<select name = "hosteltype"><option value = "ac">ac</option>
+	<option value = "non-ac">non-ac</option>
+	</select><br><br>
+
+	
+	<label>Fees</label><br>
+	<input type = "number" class = "form-control" name = "fees" placeholder = "Enter the fees"><br><br>
+
+	<div align = "center"><button type="submit" class="btn btn-primary btn-lg active">submit</button><br><br>
+	</form>
+
+</div>
+</body>
+</html>
